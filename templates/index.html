@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Случайные цитаты</title>
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Случайные цитаты</h1>
+
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <h3>Quotable API</h3>
+                <blockquote class="blockquote">
+                    <p class="mb-0">Оригинал: {{ quotable_quote }}</p>
+                    <p class="mb-0 mt-3">Перевод: {{ quotable_translated }}</p>
+                    <footer class="blockquote-footer mt-2">{{ quotable_author }}</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-6">
+                <h3>ZenQuotes API</h3>
+                <blockquote class="blockquote">
+                    <p class="mb-0">Оригинал: {{ zen_quote }}</p>
+                    <p class="mb-0 mt-3">Перевод: {{ zen_translated }}</p>
+                    <footer class="blockquote-footer mt-2">{{ zen_author }}</footer>
+                </blockquote>
+            </div>
+        </div>
+
+        <a href="/" class="btn btn-primary">Обновить цитаты</a>
+    </div>
+</body>
+</html>
